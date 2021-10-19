@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=320, initial-scale=1">
+	 <title>Codigo QR</title>
+    <meta charset="utf-8">
+	 <link href='../assets/css/boxicons.min.css' rel='stylesheet'>
+	 <link rel="stylesheet" href="../style.css" />
+<style>
+      body, html {
+        background: black;
+        min-width: 100%;
+        min-height: 100%;
+        padding-top: 1em;
+	 	 padding-left: 11.5em;
+      }
+
+		h2 {
+		padding-right: 8em;
+		}
+
+		.sidebar.open ~ .home-section{
+  		left: 250px;
+  		width: calc(100% - 250px);
+		}
+
+		p, h2, h1, button special, b, h2, br, li, footer {
+		color: white;
+		}
+		
+		h1 {
+		margin-top: 15px;
+		}
+		
+		ilo {
+		color: rgba(106,241,255,.93);
+		}
+		
+		blaki {
+		color: black;
+		}
+		
+		a {
+		color: inherit;
+		}
+		
+		.specialo {
+		background-color: rgba(106,150,255,.93);
+		box-shadow: inset 0 0 0 1px rgba(106,150,255,.93);
+		color: black;
+		}
+		
+		iframe {
+		border-radius: 8px;
+		}
+		
+		.box {
+		margin-left: 200px;
+		margin-right: 200px;
+		}
+		
+		h1 {
+		font-size: 3.9em;
+		}
+	
+		h2 {
+		font-size: 2.5em;
+		}
+		
+		/* Posts */
+
+	.posts {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin: 0 0 2em -6em;
+		width: calc(100% + 6em);
+	}
+
+		.posts article {
+			-moz-flex-grow: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-grow: 0;
+			flex-grow: 0;
+			-moz-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;
+			margin: 0 0 6em 6em;
+			position: relative;
+			width: calc(33.33333% - 6em);
+		}
+
+			.posts article:before {
+				background: rgba(210, 215, 217, 0.75);
+				content: '';
+				display: block;
+				height: calc(100% + 6em);
+				left: 3em;
+				position: absolute;
+				top: 0;
+				width: 1px;
+			}
+
+			.posts article:after {
+				background: rgba(210, 215, 217, 0.75);
+				bottom: -3em;
+				content: '';
+				display: block;
+				height: 1px;
+				position: absolute;
+				right: 0;
+				width: calc(100% + 6em);
+			}
+
+			.posts article > :last-child {
+				margin-bottom: 0;
+			}
+
+			.posts article .image {
+				display: block;
+				margin: 0 0 2em 0;
+			}
+
+				.posts article .image img {
+					display: block;
+					width: 100%;
+				}
+
+		@media screen and (min-width: 1681px) {
+
+			.posts article:nth-child(3n + 1):before {
+				display: none;
+			}
+
+			.posts article:nth-child(3n + 1):after {
+				width: 100%;
+			}
+
+			.posts article:nth-last-child(1), .posts article:nth-last-child(2), .posts article:nth-last-child(3) {
+				margin-bottom: 0;
+			}
+
+				.posts article:nth-last-child(1):before, .posts article:nth-last-child(2):before, .posts article:nth-last-child(3):before {
+					height: 100%;
+				}
+
+				.posts article:nth-last-child(1):after, .posts article:nth-last-child(2):after, .posts article:nth-last-child(3):after {
+					display: none;
+				}
+
+		}
+
+		@media screen and (max-width: 1680px) {
+
+			.posts article {
+				width: calc(50% - 6em);
+			}
+
+				.posts article:nth-last-child(3) {
+					margin-bottom: 6em;
+				}
+
+		}
+
+		@media screen and (min-width: 481px) and (max-width: 1680px) {
+
+			.posts article:nth-child(2n + 1):before {
+				display: none;
+			}
+
+			.posts article:nth-child(2n + 1):after {
+				width: 100%;
+			}
+
+			.posts article:nth-last-child(1), .posts article:nth-last-child(2) {
+				margin-bottom: 0;
+			}
+
+				.posts article:nth-last-child(1):before, .posts article:nth-last-child(2):before {
+					height: 100%;
+				}
+
+				.posts article:nth-last-child(1):after, .posts article:nth-last-child(2):after {
+					display: none;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.posts {
+				margin: 0 0 2em -4.5em;
+				width: calc(100% + 4.5em);
+			}
+
+				.posts article {
+					margin: 0 0 4.5em 4.5em;
+					width: calc(50% - 4.5em);
+				}
+
+					.posts article:before {
+						height: calc(100% + 4.5em);
+						left: -2.25em;
+					}
+
+					.posts article:after {
+						bottom: -2.25em;
+						width: calc(100% + 4.5em);
+					}
+
+					.posts article:nth-last-child(3) {
+						margin-bottom: 4.5em;
+					}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.posts {
+				margin: 0 0 2em 0;
+				width: 100%;
+			}
+
+				.posts article {
+					margin: 0 0 4.5em 0;
+					width: 100%;
+				}
+
+					.posts article:before {
+						display: none;
+					}
+
+					.posts article:after {
+						width: 100%;
+					}
+
+					.posts article:last-child {
+						margin-bottom: 0;
+					}
+
+						.posts article:last-child:after {
+							display: none;
+						}
+
+		}
+		
+		/* Mini Posts */
+
+	.mini-posts article {
+		border-top: solid 1px rgba(210, 215, 217, 0.75);
+		margin-top: 2em;
+		padding-top: 2em;
+	}
+
+		.mini-posts article .image {
+			display: block;
+			margin: 0 0 1.5em 0;
+		}
+
+			.mini-posts article .image img {
+				display: block;
+				border-radius: 8px;
+				width: 100%;
+			}
+			
+			.posts article .image img {
+				display: block;
+				border-radius: 8px;
+				width: 100%;
+			}
+
+		.mini-posts article:first-child {
+			border-top: 0;
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+		#intro {
+		background-color: transparent;
+		}
+		
+    </style>
+    <!--<link rel="stylesheet" href="../style.css"/>-->
+    <!--<script defer src="../script.js"></script>-->
+  </head>
+  <body>
+<div class="content">
+									<header class="major">
+									<center center="auto">
+									<p><br />
+<div class="mini posts">
+									<article type="special">
+									<center center="auto">
+									<p>Puedes acercar, alejar la imagen o descargarla</p>
+										<div class="12u"><a class="image fit"><img src="../img/scan.qr02.png" alt="" /></a></div>
+										<a href="../index.html"><div class="button"><span class='bx bx-log-out'> Regresar</span></button></div></a><br>
+										<a href="https://archive.org/download/code-qr_202110/F01F2589-6328-4115-9FF2-D22E72DECBF8.zip"><br><div class="button"><span class='bx bxs-download'> Descargar Imagen</span></button></div></a>
+									<script type="text/javascript">  function onBtno() {alert('Copia el texto y pegalo en el navegador o escanea el codigo QR');}</script> 
+
+<div onclick="onBtno()"><br><br>mailto:kkgg3020@gmail.com?subject=Escribe%20un%20Título</button> </div>
+</article>
+  </body>
+</html>
