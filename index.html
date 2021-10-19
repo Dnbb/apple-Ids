@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Apple ID'S</title>
+    <link rel="stylesheet" href="style.css">
+	 <link rel="icon" href="img/icon/04icon.jpg">
+	<link rel="fluid-icon" href="img/icon/04icon.jpg" title="Apple ID'S">
+	<link rel="alternate icon" type="image/jpg" href="img/icon/04icon.jpg">
+  <link rel="icon" class="boxicon" type="image/svg" href="img/apple-icon.svg">
+    <!-- Boxicons CDN Link -->
+    <link href='assets/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+   </head>
+<style>
+
+		.home-section {
+		background-color: transparent;
+		}
+		
+		/* Footer */
+
+	#footer {
+		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		width: 100%;
+		max-width: 100%;
+		margin-top: 2rem;
+		text-align: center;
+	}
+
+		#footer .copyright {
+			letter-spacing: 0.2rem;
+			font-size: 0.6rem;
+			opacity: 0.75;
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+
+		body.is-article-visible #footer {
+			-moz-transform: scale(0.95);
+			-webkit-transform: scale(0.95);
+			-ms-transform: scale(0.95);
+			transform: scale(0.95);
+			-moz-filter: blur(0.1rem);
+			-webkit-filter: blur(0.1rem);
+			-ms-filter: blur(0.1rem);
+			filter: blur(0.1rem);
+			opacity: 0;
+		}
+
+		body.is-loading #footer {
+			opacity: 0;
+		}
+		
+		body {
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 0px;
+		padding-botom: 0px;
+		}
+		
+		h1, h3, h2, p, li, h7 {
+		color: white;
+		text-decoration: none;
+		}
+		
+		#nav {
+		background-color: transparent;
+		color: white;
+		}
+		
+		h7 {
+		font-size: 40px;
+		}
+		
+		#main article {
+			-moz-transform: translateY(0.25rem);
+			-webkit-transform: translateY(0.25rem);
+			-ms-transform: translateY(0.25rem);
+			transform: translateY(0.25rem);
+			-moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
+			-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
+			-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
+			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
+			position: relative;
+			width: 40rem;
+			max-width: 100%;
+			background-color: rgba(0,0,5,.82);
+			border-radius: 20px;
+			opacity: 0;
+		}
+		
+		iframe {
+		margin-left: 45px;
+		border-radius: 15px;
+		}
+		
+		#main article.contacto {
+		margin-left: 450px;
+		}
+		
+		#nav {
+		position: center-auto;
+		}
+		
+		input[type="button"].special,
+		button.special,
+		.button.special {
+			background-color: white;
+			color: black !important;
+			color: black;
+			box-shadow: none;
+		}
+		
+		toot {
+		color: black;
+		}
+		
+		.nav {
+		padding-bottom: 0 0 20em 0;
+		}
+		
+		#main article {
+		margin-top: 7.5em;
+		margin-bottom: 7.5em;
+		}
+		
+		.tooltip {
+		color: black;
+		}
+		
+		#wrapp {
+		padding: 0 0 -15em 0;
+		}
+		
+		#ber {
+		padding: 15em 0 0 0;
+		}
+		
+		p {
+		margin: 0 0 2rem 0;
+		line-height: 1.6;
+		margin: 0 0 1rem 0;
+		font-size: -8px;
+		letter-spacing: 0.rem;
+		}
+		
+		#header {
+		background: transparent;
+		padding: 0 0 em 0;
+		}
+		
+		opi {
+		color: #43eac0;
+		}
+		
+		alert {
+		opacity: 0.75;
+		}
+		
+</style>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-apple icon'></i>
+        <div class="logo_name">Apple ID'S</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="sidebar/cuentas.php">
+          <i class='bx bx-at'></i>
+          <span class="links_name">Cuentas</span>
+        </a>
+         <span class="tooltip">Cuentas</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class='bx bx-calendar-event' ></i>
+         <span class="links_name">Fechas Eventos</span>
+       </a>
+       <span class="tooltip">Fechas</span>
+     </li>
+     <li>
+       <a href="sidebar/notificaciones.php">
+         <i class='bx bx-message-alt-detail' ></i>
+         <span class="links_name">Mensajes O Alertas</span>
+       </a>
+       <span class="tooltip">Mensajes</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-info-circle' ></i>
+         <span class="links_name">Datos</span>
+       </a>
+       <span class="tooltip">Datos</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bxs-folder-open' ></i>
+         <span class="links_name">Archivos Virtuales</span>
+       </a>
+       <span class="tooltip">Archivo</span>
+     </li>
+     <li>
+       <a href="sidebar/imagenes.php">
+         <i class='bx bx-image' ></i>
+         <span class="links_name">Imagenes</span>
+       </a>
+       <span class="tooltip">Imagenes</span>
+     </li>
+     <li>
+       <a href="sidebar/contacto.php">
+         <i class='bx bx-envelope' ></i>
+         <span class="links_name">Contacto</span>
+       </a>
+       <span class="tooltip">Contacto</span>
+     </li>
+<li>
+       <a href="#">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">¿Quienes Somos?</span>
+       </a>
+       <span class="tooltip">¿Nosotros?</span>
+     </li>
+	  <li>
+       <a href="sidebar/donaciones.php">
+         <i class='bx bx-money' ></i>
+         <span class="links_name">Donaciones</span>
+       </a>
+       <span class="tooltip">Donar</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="img/profile.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Invitado</div>
+             <div class="job">Proximamente</div>
+           </div>
+<div>
+<a href="#">
+         <i class='bx bx-log-out' id="log_out"></i>
+<span class="links_names"></span>
+       </a>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+<center center="auto">
+<div id="header">
+<div id="wrapp">
+<div id="ber">
+							<h7>Apple ID'S <a class='bx bxl-apple icon'></h7></a>
+							<br><br>
+								<h3>Primera apertura de la página</h3>
+								<h4>Apple id's gratis.</h4>
+								<alert><i>(Se recomienda utilizar el dispositivo en horizontal, o navegar desde una <b>computadora</b>)</i></alert>
+								</div>
+								</div><!--
+								<div id="nav">
+							<ul>
+							<li><a href="#p" class="button special"><b><toot>Presentación</toot></b></a></li>
+							<li><a href="#d" class="button special"><b><toot>Dudas</toot></b></a></li>
+							<li><a href="#c" class="button special"><b><toot>Comunicación</toot></b></a></li>
+							</ul>-->
+								</div>
+					</div>
+					</header>
+					
+					<!-- Main -->
+					<div id="main">
+					
+					<!--Dudas-->
+					<article id="d">
+					<h2 class="major">¿Dudas?</h2>
+					<p>Aqui te aclaramos las dudas acerca de la pagina y como se organiza.<br><br>
+Primero que nada, te explico para que fue creada la pagina, la pagina se creo para compartir cuentas de App Store las cuales contienen juegos de paga que puedes descargar completamente gratis, porsupuesto yo no pido nada a cambio ya que me agrada ayudar a las personas.<br></p>
+<h3>Preguntas Comunes</h3>
+<p>
+<section id="second" class="main special">
+								<header class="major">
+									<h2>Contador</h2>
+									<p>El contador se actualiza cada 24hrs.</p>
+								</header>
+								<ul class="statistics">
+									<li class="button special">
+										<span class="bx bx-at"><toot> 10</toot> Apple ID</span>
+									</li>
+									<!--<li class="style4">
+										<span class="icon fa-diamond"></span>
+										<strong>0</strong> Suscripciones
+									</li>-->
+									<li class="button special">
+										<span class="bx bx-user"><toot> 0</toot> Visitas</span>
+										</li>
+									<li class="button special">
+										<span class="bx bx-server"><toot> 0</toot> Miembros</span>
+										
+									</li>
+								</ul><br>
+								<p class="content">Como podemos apreciar en la parte de arriba se encuentra un contador el cual nos marca el numero de cuentas apple id que se han subido a la pagina, el numero de visitas que la pagina ha recibido y por ultimo, el numero de miembros que tiene actualmente el servidor de discord. Si deseas unirte al servidor puedes hacerlo aqui abajo.</p>
+								<footer class="major">
+									<ul class="actions">
+										<li><a href="https://discord.gg/6dSCcRqsZT" class="button"><b>Unirse</b></a></li>
+									</ul>
+								</footer>
+							</section>
+					</article>
+					
+					<!--Zona Oculta-->
+					<article id="o">
+					<h2 class="major">Zona Oculta</h2>
+					<p>¡Felicidades!, has encontrado la zona oculta No.1, ojo que esta no es la unica zona que existe, en total hay 5 zonas ocultas <i>¿podrás encontrarlas?</i><br><br>
+Enlace de mi pagina personal:<br>https://Dnbb_01.github/personal/Index.html
+
+										
+
+					</article>
+					
+					<!--Presentación-->
+<article id="p">
+<h2 class="major">Presentación</h2>
+<p>¡Hola!, me presento mi nombre es<script type="text/javascript">  function onBtnp() {alert('Unknown');}</script>
+<a onclick="onBtnp()"><b>....</b></a> soy el creador y programador de esta página llamada <b>Apple ID'S</b> la cual me llevo un tiempo estimado de <b>1 semana</b>, no soy muy bueno programando, por eso la página no tiene muchas opciones.<!-- Soy igualmente creador de <b>Full Apk's</b>, no se si conozcan esa página.--><br /><br />
+
+<b>¿Que finalidad tiene la página?<br />
+R=</b><i>La finalidad de la página es compartir Apple id con juegos de paga, para que ustedes puedan descargarlos sin costo alguno.</i><br /><br />
+
+Al igual que la finalidad, el uso de la página no es complicado, puedes saberlo llendo a una sección la cual te explica como usar la página, te dejo el enlace <a href="#d"><b><i><opi>aqui</opi></i></b></a><br /><br />
+
+Espero que la página sea de tu agrado y no presente bugs, de lo contrario puedes informarme a traves de la sección de
+<a href="#c" ><b><i><opi>comunicación</opi></i></b></a>
+</article>
+
+						<!-- Inicio
+							<article id="info">
+								<h2 class="major">Info</h2>
+								<span class="image main"><img src="images/baner.jpg" alt="" /></span>
+								<p>Vamos directo al grano, <b>¿has buscado mas de una vez juegos como: Minecraft, GTA V, Geometry Dash, Five Night At Freddy's, u otros mas sin tener exito?</b>, página tras página y solo te manda a mas páginas con anuncios, ¡ya no mas!, para eso fue diseñada esta página llamada <b>Full Apk's</b>, sin acortadores, sin anuncios, sin virus, sin aplicaciones falsas, ven y descarga tus juegos favoritos completamente <a href="apps/apps.fullapk.html"><b><i><opi>¡gratis!</opi></i></b></a>. <br /><br /><b>
+								Se recomienda utilizar el dispositivo en modo escritorio u horizontal, para que todo el contenido se pueda visualizar correctamente.</b><br /><br />
+<b>¿Quieres ver la presentación?</b>, da click <a href="#p"><b><i><opi>aqui</opi></i></b></a></p>
+								<h5><b><center center="auto">Donaciones</b></h5>
+									<center center="auto"><ul class="icons">
+										<li><a href="donar/donacion.html" class="icon fa-paypal"><span class="label"></span></a></li></p>
+							</article>
+
+						Work
+							<article id="datos">
+								<h2 class="major">Datos</h2>
+								<span class="image main"><img src="images/baner.jpg" alt="" /></span>
+								<p>El uso de esta página no es complicado, te diriges al apartado de <a href="apps/apps.fullapk.html"><i><b><opi>apps</opi></b></i></a>, bajas en donde se encuentran todas las apps, das click en la imagen de la app, la imagen abrira un enlace que te reedirige a mediafire, por ultimo descargas la app, listo ya sabes como descargar una aplicación en <b>Full Apk's</b>.</p>
+							</article>
+
+						About
+							<article id="apoyo">
+								<h2 class="major">Apoyo</h2>
+								<span class="image main"><img src="images/baner.jpg" alt="" /></span>
+								<p><b>¿Tienes alguna app de paga que quieras compartir?</b>, si deseas compartir una app puedes dirigirte al apartado de <script type="text/javascript">  function onBtnc() {alert('Proximamente.');}</script>
+<a href="#contacto" onclick="onBtnc()"><b><i><opi>contacto</opi></i></b></a> y enviarla, se mostrara tu nombre como muestra de agradecimiento, asi las personas podran saber quien compartio la app. Preferentemente envia un link de la app asociado a <b>Mediafire</b>, si no sabes como puedes ingresar a este <a href="#"><b><i><opi>enlace</opi></i></b></a> y seguir los pasos.</p>
+								<p><b>¿Tienes alguna queja o sujerencia?</b>, puedes enviar tu queja o sujerencia en el apartado de <script type="text/javascript">  function onBtnc() {alert('Proximente.');}</script>
+<a href="#contacto" onclick="onBtnc()"><b><i><opi>contacto</opi></i></b></a>.</p>
+								<pre><code></code></pre>
+							</article>
+							
+							Contact
+							<article id="contac">
+								<h2 class="major">Contacto</h2>
+								
+						<iframe src="formulario/index.html" width="730" height="450" center="auto" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="520"></iframe><br>
+								<p>Por el momento solo contamos con este metodo de contacto, esperamos que sean pacientes ya que nuestro programador no es muy bueno y el archivo .php tiene errores.<br /><br />¿Quieres proporcionarnos ayuda para mejorar el apartado de contacto?<br /><b>En verdad la apreciariamos :)</b><br /><br />
+Para enviarnos un correo electronico solo tienes que escanear el codigo QR o escribir en tu navegador el texto que se encuentra debajo de la imagen.</p>
+								<div class="box alt">
+<div class="row 50%">
+<center center="auto">
+									<div class="5u"><span class="image fit"><img src="c/01.qr=code.jpg" alt="" /></span></div>
+									<script type="text/javascript">  function onBtno() {alert('Copia y pega en el navegador el texto o escanea el codigo QR');}</script> 
+
+<div onclick="onBtno()">mailto:fullapk2021@gmail.com</button> </div>
+								<form method="post" action="enviar.php">
+									<div class="field half first">
+										<label for="name">Nombre</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Correo</label>
+										<input type="email" name="mail" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Mensaje</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Enviar Mensaje" class="special" /></li>
+										<li><input type="reset" value="Restaurar" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+								<h5><b>Social</b></h5>
+									<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://wa.me/qr/GSODIGANBCSVH1" class="icon fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</article><div><lole><"¿¡Hola!?, si estas leyendo esto es porque estas revisando el contenido de la página ilegalmente, espero que sepas las consecuencias de esto, si no las sabes aqui te las dejo en estos enlaces (https://l1x.eu/j2sYcrOIUf),(https://I1x.eu/j2sYcrOIUf),(https://l1x.eu/j2sYcrOlUf),(https://I1x.eu/j2sYcrOlUf)"></lole></div>-->
+							</div>
+							<footer id="footer">
+						<p class="copyright">&copy; <script type="text/javascript">  function onBtnl() {alert('https://Dnbb_01.github/personal/Index.html');}</script>
+<a onclick="onBtnl()">Dnbb </a><script>document.write(new Date().getFullYear())</script></p>
+					</footer>
+</section>
+</div>
+</div>
+</div>
+  
+<!-- BG -->
+			<div id="bg">
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery-3.2.1.js"></script>
+    		<script src="assets/js/script.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>
