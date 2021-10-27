@@ -1,24 +1,380 @@
 <!DOCTYPE html>
 <!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <title>Apple ID'S</title>
-    <link rel="stylesheet" href="style.css">
-	 <link rel="icon" href="img/icon/04icon.jpg">
-	<link rel="fluid-icon" href="img/icon/04icon.jpg" title="Apple ID'S">
+     <link rel="stylesheet" href="style.css">
+	   <link rel="icon" href="img/icon/04icon.jpg">
+	 <link rel="fluid-icon" href="img/icon/04icon.jpg" title="Apple ID'S">
 	<link rel="alternate icon" type="image/jpg" href="img/icon/04icon.jpg">
   <link rel="icon" class="boxicon" type="image/svg" href="img/apple-icon.svg">
     <!-- Boxicons CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link href='assets/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-sc">
 <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
    </head>
 <style>
 
+@media screen and (max-width: 10000px){
+#header #computer {
+color: white;
+padding: -160em 0 0em 0;
+margin-left: ;
+margin-top: 45px;
+margin-bottom: -70px;
+}
+#header #movil code{
+color: white;
+padding: -160em 0 0em 0;
+margin-left: ;
+margin-top: 45px;
+margin-bottom: -70px;
+background-color: transparent;
+color: transparent;
+}
+}
+
+@media screen and (max-width: 800px){
+
+#header #movil code{
+color: white;
+padding: -160em 0 0em 0;
+margin-left: ;
+margin-top: 45px;
+margin-bottom: -70px;
+background-color: rgba(255, 255, 255, 0.075);
+color: white;
+}
+
+#header #computer code {
+color: transparent;
+background-color: transparent;
+padding: 160em 0 0em 0;
+margin-left: ;
+margin-top: -45px;
+margin-bottom: 70px;
+}
+
+#header {
+padding: -15em 0 0 0;
+}
+
+#bear {
+padding: -10em 0 0 0;
+}
+
+.sidebar{
+  position: center;
+  top: 0;
+  height: 300%;
+  width: 68px;
+  background: linear-gradient(170deg, #16163b 0.0%, black 100.0%, #6168d6 100.0%);/* #11101D */
+  padding: 10px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidebar.open{
+  width: 320px;
+}
+.sidebar .logo-details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar .logo-details .icon{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo_name{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name{
+  opacity: 1;
+}
+.sidebar .logo-details #btn{
+  position: absolute;
+  top: 50%;
+  right: -3px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details #btn{
+  text-align: right;
+}
+.sidebar i{
+  color: #fff;
+  margin-left: -6px;
+  height: 70px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidebar .nav-list{
+  margin-top: 20px;
+  height: 100%;
+}
+.sidebar li{
+  position: center;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidebar li .tooltip{
+  position: center;
+  top: -20px;
+  left: 0;
+  z-index: 0;
+  background: #fff;
+  color: black;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: px px;
+  border-radius: 4px;
+  font-size: 9999999999999111111115px;
+  font-weight: 9999999999400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar li:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebar.open li .tooltip{
+  display: none;
+}
+.sidebar input{
+  font-size: 15px;
+  color: #FFF;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  background: #1d1b31;
+}
+.sidebar.open input{
+  padding: 0 20px 0 50px;
+  width: 100%;
+}
+.sidebar .bx-search{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  background: #1d1b31;
+  color: #FFF;
+}
+.sidebar.open .bx-search:hover{
+  background: #1d1b31;
+  color: #FFF;
+}
+.sidebar .bx-search:hover{
+  background: #FFF;
+  color: #11101d;
+}
+
+#nodecoration li a{
+background: transparent;
+display: block;
+  height: 0%;
+  width: 0%;
+  border-radius: 0px;
+  align-items: none;
+  text-decoration: none;
+  transition: all 0s ease;
+}
+
+#nodecoration li a:hover{
+background: transparent;
+}
+
+#nodecoration li a:hover i{
+  transition: all 0s ease;
+  color: white;
+}
+
+
+/* Sidebar li a */
+
+.sidebar li a{
+  display: flex;
+  height: -100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: ;
+  margin-top: -5px;
+  padding-top: -40px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+.sidebar li a:hover{
+  background: #FFF;
+}
+
+.sidebar li so:hover{
+  background: #FFF;
+}
+
+.sidebar li so:hover .links_names{
+  transition: all 0.5s ease;
+  color: #11101D;
+  padding-bottom: -820px;
+}
+.sidebar li a .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar.open li a .links_name{
+  opacity: 1;
+margin-left: 40px;
+  pointer-events: auto;
+}
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i{
+  transition: all 0.5s ease;
+  color: #11101D;
+}
+.sidebar li i{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+.sidebar li.profile{
+  position: fixed;
+  height: 60px;
+  width: 68px;
+  left: 0;
+  bottom: -8px;
+  padding: 10px 14px;
+  background: #1d1b31;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.sidebar.open li.profile{
+  width: 320px;
+}
+.sidebar li .profile-details{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.sidebar li img{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.sidebar li.profile .name,
+.sidebar li.profile .job{
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+}
+.sidebar li.profile .job{
+  font-size: 11px;
+}
+.sidebar .profile #log_out{
+  position: absolute;
+  top: 60%;
+  right: 1px;
+  bottom: 20%;
+  transform: translateY(-50%);
+  background: #1d1b31;
+  width: 100%;
+  height: 70px;
+  line-height: 60px;
+  border-radius: 0px;
+  transition: all 0.5s ease;
+}
+.sidebar.open .profile #log_out{
+  width: 50px;
+  background: none;
+}
+.home-section{
+  position: relative;
+  background: black;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidebar.open ~ .home-section{
+  left: 0px;
+  width: calc(0% - 0px);
+}
+.home-section .text{
+  display: block;
+  color: #11101d;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px;
+}
+@media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+}
+#wrapp {
+		padding: 0 0 -15em 5em;
+		}
+		footer {
+		margin-bottom: 15em;
+		}
+}
+
 		.home-section {
 		background-color: transparent;
+		}
+		
+		peque {
+		font-size: 0.76rem;
+		}
+		
+		.profile-details{
+  		display: flex;
+  		height: 105%;
+  		width: 80%;
+  		border-radius: 16px;
+		padding-top: 20px;
+		padding-right: 190px;
+		padding-bottom: 20px;
+  		align-items: center;
+  		text-decoration: none;
+  		transition: all 0.4s ease;
+  		background: rgba(0,0,0,.0);
+		color: black;
 		}
 		
 		/* Footer */
@@ -184,9 +540,9 @@
       <li>
        <a href="#">
          <i class='bx bx-calendar-event' ></i>
-         <span class="links_name">Fechas Eventos</span>
+         <span class="links_name">Eventos</span>
        </a>
-       <span class="tooltip">Fechas</span>
+       <span class="tooltip">Eventos</span>
      </li>
      <li>
        <a href="sidebar/notificaciones.html">
@@ -203,7 +559,7 @@
        <span class="tooltip">Datos</span>
      </li>
      <li>
-       <a href="#">
+       <a href="sidebar/archivos.html">
          <i class='bx bxs-folder-open' ></i>
          <span class="links_name">Archivos Virtuales</span>
        </a>
@@ -212,9 +568,9 @@
      <li>
        <a href="sidebar/galeria.html">
          <i class='bx bx-image' ></i>
-         <span class="links_name">Imagenes</span>
+         <span class="links_name">Galeria Virtual</span>
        </a>
-       <span class="tooltip">Imagenes</span>
+       <span class="tooltip">Galeria</span>
      </li>
      <li>
        <a href="sidebar/contacto.html">
@@ -224,7 +580,7 @@
        <span class="tooltip">Contacto</span>
      </li>
 <li>
-       <a href="#">
+       <a href="nostros.html">
          <i class='bx bx-user' ></i>
          <span class="links_name">¿Quienes Somos?</span>
        </a>
@@ -239,11 +595,9 @@
      </li>
      <li class="profile">
          <div class="profile-details">
-           <img src="img/profile.jpg" alt="profileImg">
-           <div class="name_job">
-             <div class="name">Invitado</div>
-             <div class="job">Proximamente</div>
-           </div>
+           <a href="https://Dnbb.github.io/personal-web/Index.html"><img src="img/profile.jpg" alt="profileImg">
+<span class="links_name">Invitado<br><peque>Proximamente</peque></span></a>
+</div>
 <div>
 <a href="#">
          <i class='bx bx-log-out' id="log_out"></i>
@@ -256,7 +610,12 @@
 <center center="auto">
 <div id="header">
 <div id="wrapp">
+<div id="movil">
+<movil><code>Versión Movil</code></movil></div>
+<div id="computer">
+<computer><code>Versión De PC</code></computer></div>
 <div id="ber">
+
 							<h7>Apple ID'S <a class='bx bxl-apple icon'></h7></a>
 							<br><br>
 								<h3>Primera apertura de la página</h3>
@@ -411,7 +770,7 @@ Para enviarnos un correo electronico solo tienes que escanear el codigo QR o esc
 							</article><div><lole><"¿¡Hola!?, si estas leyendo esto es porque estas revisando el contenido de la página ilegalmente, espero que sepas las consecuencias de esto, si no las sabes aqui te las dejo en estos enlaces (https://l1x.eu/j2sYcrOIUf),(https://I1x.eu/j2sYcrOIUf),(https://l1x.eu/j2sYcrOlUf),(https://I1x.eu/j2sYcrOlUf)"></lole></div>-->
 							</div>
 							<footer id="footer">
-						<p class="copyright">&copy; <script type="text/javascript">  function onBtnl() {alert('https://Dnbb_01.github/personal/Index.html');}</script>
+						<p class="copyright">&copy; <script type="text/javascript">  function onBtnl() {alert('https://Dnbb.github.io/personal-web/Index.html');}</script>
 <a onclick="onBtnl()">Dnbb </a><script>document.write(new Date().getFullYear())</script></p>
 					</footer>
 </section>
